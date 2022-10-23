@@ -1,0 +1,26 @@
+{
+  "name": "Blur Whatsapp Message",
+  "version": "1.0.0",
+  "description": "Blur Whatsapp Message",
+  "manifest_version": 3,
+  "author": "Baker Hasan",
+  "icons": {
+    "16": "wa-blur-16.png",
+    "32": "wa-blur-32.png",
+    "48": "wa-blur-48.png",
+    "128": "wa-blur-128.png"
+  },
+  "action":{
+    "default_title": "Blur Whatsapp Message"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "css": ["whatsapp-custom-style.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

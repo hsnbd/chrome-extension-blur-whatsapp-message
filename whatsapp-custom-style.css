@@ -1,0 +1,9 @@
+  [aria-label="Chat list"] span {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+[aria-label="Chat list"] span:hover {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
